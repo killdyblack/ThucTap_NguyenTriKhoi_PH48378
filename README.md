@@ -54,14 +54,22 @@ Triển khai bằng Docker
 
 ## 🚀 Hướng dẫn chạy dự án
 
-```bash
-# Clone source code
+# BƯỚC 1: Cài đặt Docker (nếu máy bạn chưa có)
+# Tải và cài đặt tại: https://www.docker.com/products/docker-desktop/
+
+# BƯỚC 2: Mở Terminal và clone source code từ GitHub
 git clone https://github.com/killdyblack/ThucTap_NguyenTriKhoi_PH48378.git
 
-# Di chuyển vào thư mục dự án
+# BƯỚC 3: Di chuyển vào thư mục dự án
 cd ThucTap_NguyenTriKhoi_PH48378
 
-# Chạy ứng dụng với Maven
-mvn spring-boot:run
+# BƯỚC 4: Build Docker image (ví dụ đặt tên là thuctap-app)
+docker build -t thuctap-app .
+
+# BƯỚC 5: Chạy Docker container từ image vừa build
+docker run -p 8080:8080 thuctap-app
+
+# => Ứng dụng sẽ chạy tại: http://localhost:8080
+
 
  
