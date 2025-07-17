@@ -251,9 +251,9 @@ public class RegisterRequest {
 - **Body**:
 ```json
 {
-  "username": "admin123",
-  "password": "Password123@",
-  "fullName": "Nguyen Van A",
+  "username": "admin",
+  "password": "Pass123@",
+  "fullName": "Nguyen Van Khoi",
   "role": "ADMIN"
 }
 
@@ -266,8 +266,8 @@ public class RegisterRequest {
 - **Body**:
 ```json
 {
-  "username": "admin123",
-  "password": "Password123@"
+  "username": "admin",
+  "password": "Pass123@"
 }
 
 ```
@@ -325,7 +325,7 @@ jwt:
   expiration: ${JWT_EXPIRATION}
 ```
 
-👉 Bạn cần tạo biến môi trường `.env` hoặc cấu hình trong IDE:
+👉 Tạo biến môi trường `.env` & cấu hình trong IDE:
 
 ```
 SPRING_DATASOURCE_URL=jdbc:mysql://localhost:3306/task_management
@@ -343,7 +343,7 @@ JWT_EXPIRATION=86400000 # 1 ngày (milliseconds)
 - [x] Cấu hình đăng ký/đăng nhập với mã hóa và JWT.
 - [x] Tích hợp Swagger với Bearer Token.
 - [x] Cấu hình `application.yml` tách biệt qua biến môi trường.
-- [x] Dễ dàng test API bằng Swagger UI hoặc Postman.
+- [x] Dễ dàng test API bằng Swagger UI & Postman.
 
 ---
 

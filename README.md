@@ -56,12 +56,12 @@ Triển khai bằng Docker
 
 ```bash
 # Clone source code
-git clone https://github.com/your-username/task-management-project.git
+git clone https://github.com/killdyblack/ThucTap_NguyenTriKhoi_PH48378.git
 
 # Di chuyển vào thư mục dự án
-cd task-management-project
+cd ThucTap_NguyenTriKhoi_PH48378
 
 # Chạy ứng dụng với Maven
 mvn spring-boot:run
- 
+
  
